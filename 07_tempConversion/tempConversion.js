@@ -1,8 +1,9 @@
-const ftoc = function() {
-
+const ftoc = function (farenheit) {
+  return parseFloat(((farenheit - 32) * (5 / 9)).toFixed(1));
 };
 
-const ctof = function() {
+const ctof = function (celsius) {
+  return parseFloat((celsius * (9 / 5)+32).toFixed(1));
 
 };
 
